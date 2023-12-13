@@ -1,8 +1,15 @@
-function swapElements(id1, id2) {
-  var element1 = document.getElementById(id1);
-  var element2 = document.getElementById(id2);
+function swapVariables() {
+  var firstVariable = document.getElementById("firstVariable").value;
+  var secondVariable = document.getElementById("secondVariable").value;
 
-  var temp = element1.innerHTML;
-  element1.innerHTML = element2.innerHTML;
-  element2.innerHTML = temp;
+  var temp = firstVariable;
+  firstVariable = secondVariable;
+  secondVariable = temp;
+
+  var resultElement = document.getElementById("result");
+  resultElement.textContent =
+    "Swapped Variables: Variable 1 = " +
+    firstVariable +
+    ", Variable 2 = " +
+    secondVariable;
 }

@@ -3,17 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variable Swapper</title>
     <link rel="stylesheet" href="main.css" />
-    <title>Swapping Example</title>
   </head>
   <body>
-    <div id="container">
-      <div id="box1" class="box" onclick="swapElements('box1', 'box2')">
-        Box 1
-      </div>
-      <div id="box2" class="box" onclick="swapElements('box2', 'box1')">
-        Box 2
-      </div>
+    <div class="container">
+      <h1>Variable Swapper</h1>
+      <label for="firstVariable">Enter First Variable:</label>
+      <input
+        type="text"
+        id="firstVariable"
+        placeholder="Enter value for variable 1" />
+      
+
+      <label for="secondVariable">Enter Second Variable:</label>
+      <input
+        type="text"
+        id="secondVariable"
+        placeholder="Enter value for variable 2" />
+      
+
+      <button onclick="swapVariables()">Swap Variables</button>
+
+      <div id="result"></div>
     </div>
 
     <script src="script.js"></script>
